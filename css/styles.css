@@ -8,11 +8,21 @@
 }
 
 :root {
-    /* Colors - Aligned with DIME logo */
-    --primary: #0E7490;        /* Deep teal from logo */
-    --secondary: #1E3A8A;      /* Navy blue from logo */
-    --accent: #991B1B;         /* Burgundy from logo */
-    --success: #0E7490;        /* Using teal for success */
+    /* Brand Colors */
+    --primary: #076189;        /* Dark teal - primary actions */
+    --secondary: #3485b2;      /* Medium blue - secondary elements */
+    --accent: #f77a26;         /* Orange - CTAs and highlights */
+    --success: #076189;        /* Using primary for success */
+
+    /* Brand Palette */
+    --brand-orange: #f77a26;
+    --brand-light-blue: #19c9f7;
+    --brand-medium-blue: #3485b2;
+    --brand-dark-teal: #076189;
+    --brand-navy: #023456;
+    --brand-black: #000d1c;
+
+    /* Neutral Scale */
     --neutral-50: #F8FAFC;
     --neutral-100: #F1F5F9;
     --neutral-200: #E2E8F0;
@@ -23,10 +33,10 @@
     --neutral-700: #334155;
     --neutral-800: #1E293B;
     --neutral-900: #0F172A;
-    
-    /* Additional logo colors */
-    --teal-light: #14B8A6;
-    --blue-dark: #1E3A8A;
+
+    /* Legacy mappings */
+    --teal-light: #19c9f7;
+    --blue-dark: #023456;
     --silver: #9CA3AF;
     
     /* Typography */
@@ -105,7 +115,7 @@ h6 { font-size: 1rem; }
 .nav-logo {
     height: 50px;
     width: auto;
-    filter: drop-shadow(0 0 2px #0E7490) drop-shadow(0 0 4px #0E7490);
+    filter: drop-shadow(0 0 2px #076189) drop-shadow(0 0 4px #076189);
 }
 
 
@@ -159,12 +169,12 @@ h6 { font-size: 1rem; }
 }
 
 .btn-primary {
-    background: var(--primary);
+    background: var(--accent);
     color: white;
 }
 
 .btn-primary:hover {
-    background: #0C5F7A;
+    background: #e06a1a;
     transform: translateY(-1px);
     box-shadow: var(--shadow-md);
 }
@@ -178,6 +188,17 @@ h6 { font-size: 1rem; }
 .btn-secondary:hover {
     background: var(--primary);
     color: white;
+}
+
+.btn-outline {
+    background: transparent;
+    color: var(--brand-light-blue);
+    border: 2px solid var(--brand-light-blue);
+}
+
+.btn-outline:hover {
+    background: var(--brand-light-blue);
+    color: var(--brand-black);
 }
 
 .btn-lg {
@@ -223,7 +244,7 @@ h6 { font-size: 1rem; }
 .hero-image {
     max-width: 100%;
     height: auto;
-    filter: drop-shadow(0 0 2px #0E7490) drop-shadow(0 0 4px #0E7490);
+    filter: drop-shadow(0 0 2px #076189) drop-shadow(0 0 4px #076189);
 }
 
 /* Trust Indicators */
@@ -606,7 +627,7 @@ a.component-link:hover h3 {
 
 /* CTA Section */
 .cta {
-    background: linear-gradient(135deg, var(--secondary) 0%, var(--primary) 100%);
+    background: linear-gradient(135deg, var(--brand-navy) 0%, var(--brand-dark-teal) 100%);
     color: white;
     padding: var(--space-3xl) 0;
     text-align: center;
@@ -636,7 +657,7 @@ a.component-link:hover h3 {
 
 /* Footer */
 footer {
-    background: var(--neutral-900);
+    background: var(--brand-black);
     color: white;
     padding: var(--space-2xl) 0;
 }
@@ -663,16 +684,17 @@ footer {
 .footer-section a {
     color: var(--neutral-400);
     text-decoration: none;
+    transition: color 0.2s;
 }
 
 .footer-section a:hover {
-    color: white;
+    color: var(--brand-light-blue);
 }
 
 .footer-bottom {
     text-align: center;
     padding-top: var(--space-xl);
-    border-top: 1px solid var(--neutral-800);
+    border-top: 1px solid var(--brand-navy);
     color: var(--neutral-400);
 }
 
@@ -695,7 +717,7 @@ footer {
 
 /* Platform Page Specific */
 .platform-hero {
-    background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+    background: linear-gradient(135deg, var(--brand-dark-teal) 0%, var(--brand-navy) 100%);
     color: white;
     padding: var(--space-3xl) 0;
     text-align: center;
@@ -1162,7 +1184,7 @@ footer {
 
 /* Careers Page */
 .careers-hero {
-    background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+    background: linear-gradient(135deg, var(--brand-dark-teal) 0%, var(--brand-navy) 100%);
     color: white;
     padding: var(--space-3xl) 0;
     text-align: center;
@@ -1309,7 +1331,7 @@ footer {
 
 .apply-section {
     padding: var(--space-3xl) 0;
-    background: linear-gradient(135deg, var(--secondary) 0%, var(--primary) 100%);
+    background: linear-gradient(135deg, var(--brand-navy) 0%, var(--brand-dark-teal) 100%);
     text-align: center;
     color: white;
 }
@@ -1376,7 +1398,7 @@ footer {
 
 /* About Page */
 .about-hero {
-    background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+    background: linear-gradient(135deg, var(--brand-dark-teal) 0%, var(--brand-navy) 100%);
     color: white;
     padding: var(--space-3xl) 0;
     text-align: center;
@@ -1548,7 +1570,7 @@ footer {
 }
 
 .about-cta {
-    background: linear-gradient(135deg, var(--secondary) 0%, var(--primary) 100%);
+    background: linear-gradient(135deg, var(--brand-navy) 0%, var(--brand-dark-teal) 100%);
     color: white;
     padding: var(--space-3xl) 0;
     text-align: center;
