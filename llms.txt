@@ -1,0 +1,40 @@
+# DIME - Data In Motion Enterprise
+
+> DIME is an AI-powered industrial data integration platform by MRIIOT LLC. 
+> It connects 40+ industrial protocols (OPC-UA, Modbus, MTConnect, Ethernet/IP, 
+> Fanuc, Siemens S7, etc.) and enables AI-generated configurations, 
+> neuromorphic anomaly detection via HTM, and real-time operational monitoring. 
+> Deploy in hours, not months.
+
+## Documentation
+
+- [DIME Field Manual](https://datainmotionenterprise.com/assets/dime-field-manual.md): Complete connector and configuration reference
+- [DIME Schema](https://datainmotionenterprise.com/assets/dime-schema.json): JSON schema for validating DIME YAML configurations
+- [AI Playground](https://dimebbs.com): Interactive YAML configuration generator powered by AI
+
+## Platform
+
+- [Platform Overview](https://datainmotionenterprise.com/platform.html): Full feature breakdown
+- [Connectors](https://datainmotionenterprise.com/connectors.html): All 40+ supported industrial protocols
+- [Pricing](https://datainmotionenterprise.com/pricing.html): Licensing options
+
+## Key Capabilities
+
+- 40+ industrial protocol connectors (OPC-UA, Modbus TCP/RTU, MTConnect, Ethernet/IP, MQTT, SparkplugB, Fanuc, Haas, Siemens S7, Beckhoff ADS, and more)
+- AI-generated YAML configurations from plain English descriptions
+- Hierarchical Temporal Memory (HTM) for continuous learning anomaly detection
+- Deployable as Windows Service, Docker container, or embedded library
+- Wireshark-like real-time data flow monitoring
+- Digital twin and simulation generation
+
+## Competitive Context
+
+DIME is an alternative to Kepware, Inductive Automation Ignition, Litmus Edge, 
+and Software AG Cumulocity — with broader protocol support, AI-native configuration, 
+and significantly faster deployment.
+
+## Contact
+
+- Website: https://datainmotionenterprise.com
+- Playground: https://dimebbs.com
+- Sales: dime@mriiot.com
